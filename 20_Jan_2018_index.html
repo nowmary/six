@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EJ is Coding</title>
+    <style>
+    .flex-container {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        text-align: center;
+    }
+
+    .flex-container > * {
+        padding: 15px;
+        -webkit-flex: 1 100%;
+        flex: 1 100%;
+    }
+
+    .article {
+        text-align: left;
+    }
+
+    header {background: black;color:white;}
+    footer {background: #aaa;color:white;}
+    .nav {background:#eee;}
+    
+    .nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .nav ul a {
+        text-decoration: none;
+    }
+
+    @media all and (min-width: 768px) {
+        .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+        .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+        footer {-webkit-order:3;order:3;}
+    }
+    </style>
+  </head>
+  <body>
+
+      <div class="flex-container">
+        <header>
+          <h1>The White Stripes</h1>
+        </header>
+
+        <nav class="nav">
+          <ul>
+            <li><a href="https://www.whitestripes.com/" target="_blank">The White Stripes</a></li>
+            <li><a href="http://jackwhiteiii.com/" target="_blank">Jack White</a></li>
+            <li><a href="http://thedeadweather.com/" target="_blank">The Dead Weather</a></li>
+          </ul>
+          </nav>
+
+          <article class="article">
+            <h1>The White Stripes</h1>
+            <p>The White Stripes formed on Bastille Day in 1997, aiming to create simple,
+              vigorous rock & roll with little more than Meg White's percussion and
+              Jack White's guitar-and-vocal attack.
+              Jack's formidable guitar skills paid homage to garage rock, blues, and punk.
+               A former drummer for the Detroit-based country outfit Goober & the Peas,
+               The also displayed an affinity for American folk music, and the White Stripes took strength
+               in the varied interests of its two members.</p>
+               <p> Moreover, the group bolstered its sound with
+               a controversial backstory (although the bandmates claimed to be siblings,
+               they were actually a married couple until 2000) and a unique color scheme,
+               which saw their clothing and cover art adhering to a red-and-white peppermint candy motif. </p>
+          </article>
+
+          <footer>EJ The Genius. period.</footer>
+
+      </div>
+
+  </body>
+</html>
